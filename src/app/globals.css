@@ -21,6 +21,12 @@
   --font-old-standard: var(--font-old-standard);
   --font-marion: var(--font-marion);
   --font-inter: var(--font-inter);
+
+  --animate-blink: blink 1s step-end infinite;
+}
+
+html {
+  overflow-y: scroll;
 }
 
 body {
@@ -32,4 +38,25 @@ body {
 ::selection {
   background-color: var(--accent-navy);
   color: #FFFFFF;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fade-in-up 0.6s ease-out forwards;
 }

@@ -1,4 +1,5 @@
 import { SocialIcons } from "@/components/SocialIcons";
+import { RotatingWords } from "@/components/RotatingWords";
 
 export default function HoldingPage() {
   return (
@@ -6,45 +7,73 @@ export default function HoldingPage() {
       {/* Hero / Centre Block */}
       <main className="flex flex-1 flex-col items-center justify-center px-4 py-16">
         {/* CJ Logo Mark */}
-        <div className="mb-8 flex h-20 w-20 items-center justify-center rounded-xl bg-accent-navy md:h-28 md:w-28">
+        <div
+          className="fade-in-up mb-8 flex h-20 w-20 items-center justify-center rounded-xl bg-accent-navy md:h-28 md:w-28"
+          style={{ animationDelay: "0ms" }}
+        >
           <span className="font-[family-name:var(--font-old-standard)] text-3xl font-bold text-white md:text-4xl">
             CJ
           </span>
         </div>
 
         {/* Masthead */}
-        <h1 className="mb-3 text-center font-[family-name:var(--font-old-standard)] text-2xl font-bold uppercase tracking-[0.15em] text-text-primary md:text-4xl lg:text-[2.5rem]">
+        <h1
+          className="fade-in-up mb-3 text-center font-[family-name:var(--font-old-standard)] text-2xl font-bold uppercase tracking-[0.15em] text-text-primary md:text-4xl lg:text-[2.5rem]"
+          style={{ animationDelay: "100ms" }}
+        >
           The Caymanian Journal
         </h1>
 
         {/* Tagline */}
-        <p className="mb-8 text-center font-[family-name:var(--font-marion)] text-sm uppercase tracking-[0.2em] text-text-secondary md:text-base">
+        <p
+          className="fade-in-up mb-8 text-center font-[family-name:var(--font-marion)] text-sm uppercase tracking-[0.2em] text-text-secondary md:text-base"
+          style={{ animationDelay: "200ms" }}
+        >
           Fearless. Fair. Independent.
         </p>
 
         {/* Divider */}
-        <hr className="mb-8 w-20 border-t border-border" />
+        <hr
+          className="fade-in-up mb-8 w-20 border-t border-border"
+          style={{ animationDelay: "300ms" }}
+        />
 
         {/* Launching Soon */}
-        <p className="mb-10 text-center font-serif text-xl font-bold uppercase tracking-[0.3em] text-accent-navy md:text-2xl">
+        <p
+          className="fade-in-up mb-10 text-center font-serif text-xl font-bold uppercase tracking-[0.3em] text-accent-navy md:text-2xl"
+          style={{ animationDelay: "400ms" }}
+        >
           Launching Soon
         </p>
 
+        {/* Rotating Words */}
+        <div
+          className="fade-in-up mb-10"
+          style={{ animationDelay: "500ms" }}
+        >
+          <RotatingWords />
+        </div>
+
         {/* Promo Video Placeholder */}
-        <div className="mb-10 flex w-full max-w-[640px] items-center justify-center rounded-lg border border-border bg-bg-surface" style={{ aspectRatio: "16/9" }}>
+        <div
+          className="fade-in-up mb-10 flex w-full max-w-[640px] items-center justify-center rounded-lg border border-border bg-bg-surface"
+          style={{ aspectRatio: "16/9", animationDelay: "600ms" }}
+        >
           <svg className="h-12 w-12 text-text-secondary" fill="currentColor" viewBox="0 0 24 24">
             <path d="M8 5v14l11-7z" />
           </svg>
         </div>
 
         {/* Social Icons */}
-        <SocialIcons />
+        <div className="fade-in-up" style={{ animationDelay: "700ms" }}>
+          <SocialIcons />
+        </div>
       </main>
 
       {/* Footer */}
       <footer
-        className="border-t bg-bg-surface px-4 py-6"
-        style={{ borderColor: "var(--border-color)" }}
+        className="fade-in-up border-t bg-bg-surface px-4 py-6"
+        style={{ borderColor: "var(--border-color)", animationDelay: "800ms" }}
       >
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 sm:flex-row sm:justify-between">
           {/* Stingray Logo */}
