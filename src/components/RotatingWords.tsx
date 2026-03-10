@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 
-const words = ["Business", "Community", "Classifieds", "Opinion", "Investigations", "Local News", "Caribbean"];
+const words = ["Business", "Politics", "Community", "Classifieds", "Opinion", "Investigations", "Local News", "Caribbean"];
 
 const TYPING_SPEED = 90;
 const DELETING_SPEED = 50;
