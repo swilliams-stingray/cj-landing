@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "caymanianjournal.ky",
+  "Id": "7f3ada37-2d18-43b4-b096-4fbe30031aba"
+}
