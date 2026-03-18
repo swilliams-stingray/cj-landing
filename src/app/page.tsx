@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SocialIcons } from "@/components/SocialIcons";
 import { RotatingWords } from "@/components/RotatingWords";
 
@@ -8,12 +9,17 @@ export default function HoldingPage() {
       <main className="flex flex-1 flex-col items-center justify-center px-4 py-16">
         {/* CJ Logo Mark */}
         <div
-          className="fade-in-up mb-8 flex h-20 w-20 items-center justify-center rounded-xl bg-accent-navy md:h-28 md:w-28"
+          className="fade-in-up mb-8"
           style={{ animationDelay: "0ms" }}
         >
-          <span className="font-[family-name:var(--font-old-standard)] text-3xl font-bold text-white md:text-4xl">
-            CJ
-          </span>
+          <Image
+            src="/logo.jpg"
+            alt="The Caymanian Journal"
+            width={112}
+            height={112}
+            className="h-20 w-20 rounded-xl md:h-28 md:w-28"
+            priority
+          />
         </div>
 
         {/* Masthead */}
@@ -21,7 +27,7 @@ export default function HoldingPage() {
           className="fade-in-up mb-3 text-center font-[family-name:var(--font-old-standard)] text-2xl font-bold uppercase tracking-[0.15em] text-text-primary md:text-4xl lg:text-[2.5rem]"
           style={{ animationDelay: "100ms" }}
         >
-          The Caymanian Journal
+          The Caymanian Journal.
         </h1>
 
         {/* Tagline */}

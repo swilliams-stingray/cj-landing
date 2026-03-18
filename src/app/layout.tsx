@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   title: "The Caymanian Journal — Launching Soon",
   description:
     "The Caymanian Journal. Fearless. Fair. Independent. Launching soon.",
+  icons: {
+    icon: "/logo.jpg",
+    apple: "/logo.jpg",
+  },
 };
 
 export default function RootLayout({
