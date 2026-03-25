@@ -60,14 +60,18 @@ export default function HoldingPage() {
           <RotatingWords />
         </div>
 
-        {/* Promo Video Placeholder */}
+        {/* Promo Video */}
         <div
-          className="fade-in-up mb-10 flex w-full max-w-[640px] items-center justify-center rounded-lg border border-border bg-bg-surface"
+          className="fade-in-up mb-10 w-full max-w-[640px] overflow-hidden rounded-lg"
           style={{ aspectRatio: "16/9", animationDelay: "600ms" }}
         >
-          <svg className="h-12 w-12 text-text-secondary" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M8 5v14l11-7z" />
-          </svg>
+          <iframe
+            className="h-full w-full"
+            src="https://www.youtube.com/embed/W8usHMNdbHA"
+            title="Promo Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
         </div>
 
         {/* Social Icons */}
