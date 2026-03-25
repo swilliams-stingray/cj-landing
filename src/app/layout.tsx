@@ -3,7 +3,7 @@ import { oldStandardTT, inter, marion } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "The Caymanian Journal — Launching Soon",
+  title: "The Caymanian Journal. — Launching Soon",
   description:
     "The Caymanian Journal. Fearless. Fair. Independent. Launching soon.",
   icons: {
