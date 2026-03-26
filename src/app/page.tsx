@@ -67,7 +67,7 @@ export default function HoldingPage() {
         >
           <iframe
             className="h-full w-full"
-            src="https://www.youtube.com/embed/W8usHMNdbHA"
+            src="https://www.youtube.com/embed/W8usHMNdbHA?autoplay=1&mute=1"
             title="Promo Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
